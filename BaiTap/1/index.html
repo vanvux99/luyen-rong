@@ -16,7 +16,7 @@
         var numA = document.getElementById("txt")
         var but = document.getElementById("ok")
 
-        if (numA.value != null) {
+        if (numA.value != null && numA.value <= 100) {
             but.addEventListener("click", function() {
                 alert(numA.value * 2)
             })

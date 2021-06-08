@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+</head>
+
+<body>
+    <p>Nhập 3 số sau:</p>
+    <label for=""> A
+    <input type="text" id="numA">
+    <label for=""> B
+    <input type="text" id="numB">
+    <label for=""> C
+    <input type="text" id="numC">
+
+    <button type="button" id="result"> Kết quả </button>
+
+    <script>
+        var result = document.getElementById('result')
+
+        result.addEventListener('click', function() {
+            var numA = document.getElementById('numA').value;
+            var numB = document.getElementById('numB').value;
+            var numC = document.getElementById('numC').value;
+
+            if (numA <= 100 && numB <= 100 && numC <= 100){
+                alert( (numA - numB ) * numC )
+            }
+        })
+    </script>
+</body>
+
+</html>
