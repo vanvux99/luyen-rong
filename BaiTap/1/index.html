@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+</head>
+
+<body>
+    <input type="text" id="txt">
+    <button id="ok">OK</button>
+
+    <script type="text/javascript">
+        var numA = document.getElementById("txt")
+        var but = document.getElementById("ok")
+
+        if (numA.value != null) {
+            but.addEventListener("click", function() {
+                alert(numA.value * 2)
+            })
+        }
+    </script>
+</body>
+
+</html>
