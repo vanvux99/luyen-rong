@@ -14,13 +14,13 @@
         // (N + 1) <= N < (N mũ 2) với N<= 15
         var numInput = prompt('Nhập vào số N: ', '');
         var listNumber = new Array()
-        const powNum = Math.pow(numInput, 2)
-        const sumNum = (Number)(numInput) + 1
+        const POW = Math.pow(numInput, 2)
+        const SUM = (Number)(numInput) + 1
 
         if (numInput <= 15) {
-            console.log(powNum);
-            console.log(sumNum);
-            for (let index = sumNum; index < powNum; index++) {
+            console.log(POW);
+            console.log(SUM);
+            for (let index = SUM; index < POW; index++) {
                 listNumber.push(index)
             }
                 alert("Các số thỏa mãn là: " + listNumber);
