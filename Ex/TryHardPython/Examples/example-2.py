@@ -64,3 +64,54 @@
 #                 uln = i
 # print (uln)
 
+# Kiểm tra một số có phải là số hoàn hảo bằng Python
+# number = input("nhập n = ")
+# sum = 0
+# for i in range(1, int(number) + 1):
+#     if int(number) % i == 0 and i != int(number):
+#         sum += i
+# if sum == int(number):
+#     print(number, "là số hoàn hảo")
+# else:
+#     print(number, "không phải là số hoàn hảo")
+
+# Kiểm tra số chính phương bằng Python
+# import math 
+# check = False
+# number = int(input("nhập n = "))
+# sqrt = math.sqrt(int(number))
+# for i in range(number):
+#     if i == sqrt:
+#         check = True
+#         break
+# if check == True:
+#     print(number, "là số chính phương")
+# else:
+#     print(number, "không là số chính phương")
+
+# Kiểm tra số nguyên tố bằng Python
+# import math
+# sum = 0
+# number = int(input("nhập n = "))
+# if number > 0:
+#     for i in range(1, number + 1):
+#         if number % i == 0:
+#             sum += 1
+#     if sum == 2:
+#         print(number, "là số nguyên tố")
+#     else:
+#         print(number, "không là số nguyên tố")
+    
+
+# Đảo ngược một số bằng Python
+# number = int(input("nhập n = "))
+# stri = str(number)
+# print(stri[::-1])
+
+# In ra từng ký tự của một số bằng Python
+n = int(input("nhập n = "))
+stri = str(n)
+result = ''
+for i in stri:
+    result += i + ' '
+print(result)
