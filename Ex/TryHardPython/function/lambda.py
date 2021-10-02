@@ -21,14 +21,16 @@ def abc (a, b):
 # print(abc(2,11))
 
 # viết pt bậc 1 
+
+def phuongtrinhbacnhat(a,b):
+  print("phương trình ax + b = 0 có các hệ số lần lượt là: ", a, b)
+  if a > 0:
+    print("nghiệm của phương trình là: ", -b/a)
+  elif a == 0:
+    print("phương trình có vô số nghiệm")
+  else:
+    print("phương trình vô nghiệm")
+
 a = float(input("nhập hệ số a: "))
 b = float(input("nhập hệ số b: "))
-
-print("phương trình ax + b = 0 có các hệ số lần lượt là: ", a, b)
-
-if a > 0:
-  print("nghiệm của phương trình là: ", -b/a)
-elif a == 0:
-  print("phương trình có vô số nghiệm")
-else:
-  print("phương trình vô nghiệm")
+phuongtrinhbacnhat(a,b)
