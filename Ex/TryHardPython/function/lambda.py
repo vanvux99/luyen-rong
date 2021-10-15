@@ -35,5 +35,7 @@ a = float(input("nhập hệ số a: "))
 b = float(input("nhập hệ số b: "))
 phuongtrinhbacnhat(a,b)
 
-phuongtrinhbacnhat2 = lambda a, b: ("phương trình vô nghiệm" if a < 0 else ("nghiệm của phương trình là" + -b/a)) if a != 0 else "phương trình vô nghiệm"
-phuongtrinhbacnhat(a,b)
+phuongtrinhbacnhat2 = lambda a, b: ("vô nghiệm" if a < 0 else -b/a) if a != 0 else "vô số nghiệm"
+print('phương trình có nghiệm: ', phuongtrinhbacnhat2(a,b))
+
+# pt = lambda a,b: ( () if a < 0 else ) if a != 0 else "vô nghiệm"
