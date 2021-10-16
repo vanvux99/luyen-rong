@@ -35,10 +35,14 @@ def xoasinhvien():
 
 def sua(id, tensv):
     global danhsachsinhvien
-    danhsachsinhvien[id] = tensv
+    for i in danhsachsinhvien:
+        if i == id: danhsachsinhvien[i] = tensv
 
 def suasinhvien():
-    return 1
+    idsv = input('nhập id sv cần sửa: ')
+    tensv = input('nhập ten sv cần sửa: ')
+    sua(idsv, tensv)
+    print('đã sửa sv')
 
 def xemds():
     global danhsachsinhvien
@@ -54,5 +58,6 @@ danhsachsinhvien = {'1': 'vũ'}
 kiemtrads()
 # themsinhvien()
 xemds()
-xoasinhvien()
+# xoasinhvien()
+suasinhvien()
 xemds()
