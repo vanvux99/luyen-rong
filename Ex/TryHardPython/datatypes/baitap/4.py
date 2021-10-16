@@ -8,8 +8,6 @@
 #          3: Sửa sinh viên
 #          4: Xem danh sách sinh viên
 
-
-
 def them(ten):
     global danhsachsinhvien
     if bool(danhsachsinhvien) == False:
@@ -59,5 +57,5 @@ kiemtrads()
 # themsinhvien()
 xemds()
 # xoasinhvien()
-suasinhvien()
-xemds()
+# suasinhvien()
+# xemds()
