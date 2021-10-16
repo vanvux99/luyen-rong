@@ -25,7 +25,17 @@ def themsinhvien():
         them(tensv)
 
 def xoa(id):
-    return 1
+    global danhsachsinhvien
+    del danhsachsinhvien[id]
+
+def xoasinhvien():
+    tensv = input('nhập id sv cần xóa: ')
+    xoa(tensv)
+    print('đã xóa sv khỏi ds')
+
+def sua(id, tensv):
+    global danhsachsinhvien
+    danhsachsinhvien[id] = tensv
 
 def suasinhvien():
     return 1
@@ -42,5 +52,7 @@ def kiemtrads():
 
 danhsachsinhvien = {'1': 'vũ'}
 kiemtrads()
-themsinhvien()
+# themsinhvien()
+xemds()
+xoasinhvien()
 xemds()
